@@ -21,7 +21,7 @@ def login(request):
         "customerPhone": "8494863493",
         # "returnUrl": "https://cashfree.com",
 
-         "notifyUrl": "https://channi.vercel.app/payment_info",
+         "notifyUrl": "https://channi.vercel.app/payment_info/",
     }
 
 
@@ -32,6 +32,18 @@ def login(request):
 
 
 def payment_info(request):
-    print("ggg")
-    return render(request,'login.html')
+    print("mogan")
+    if request.method == 'POST':
+        order_id = request.POST.get('orderId')
+        transaction_id = request.POST.get('referenceId')
+        payment_status = request.POST.get('orderStatus')
+
+        # Process the payment details as needed
+        print("Order ID:", order_id)
+        print("Transaction ID:", transaction_id)
+        print("Payment Status:", payment_status)
+    return None
+    
+
+    
 
