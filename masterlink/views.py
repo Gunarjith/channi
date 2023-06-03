@@ -15,7 +15,7 @@ def login(request):
         "orderId": reference_id,
         "orderAmount": "1",
         "orderCurrency": "INR",
-        "oderNote": "pay",
+        "orderNote": "pay",
         "customerName": "mohan",
         "customerEmail": "abcd@gmail.com",
         "customerPhone": "8494863493",
