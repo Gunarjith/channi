@@ -21,7 +21,7 @@ def login(request):
         "customerPhone": "8494863493",
         # "returnUrl": "https://cashfree.com",
 
-         "notifyUrl": "channi-pjighknxu-gunarjith.vercel.app/payment_info/",
+         "notifyUrl": "https://channi-pjighknxu-gunarjith.vercel.app/payment_info/",
     }
 
 
